@@ -3,7 +3,7 @@ b = int(input('ingrese numero 2:\n'))
 
 if a > b:
     a, b = b, a
-
+print(a, b)
 def euclides_extendido(a, b):
     if a == 0:
         return b, 0, 1
