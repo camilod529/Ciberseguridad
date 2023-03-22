@@ -10,7 +10,7 @@ def mcd(a, b):
 def inv(a, m):
     gcd, x, y = mcd(a, m)
     if gcd != 1:
-        return None  # modular inverse does not exist
+        return None # No existe el inverso multiplicativo
     else:
         return x % m
  
@@ -27,16 +27,14 @@ def decrypt(mensaje_encriptado, clave):
  
  
 
-# declaring text and key
+
 mensaje = input('Ingrese mensaje a encriptar\n')
 clave = [17, 20]
 
-# calling encryption function
 Mensaje_encriptado = encrypt(mensaje, clave)
 
 print('Mensaje encriptado: ', Mensaje_encriptado )
 
-# calling decryption function
 print('Mensaje desencriptado: ', decrypt(Mensaje_encriptado, clave) )
  
  
